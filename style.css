@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    /* background-color: rgb(245, 245, 245); */
+    background-color: black;
+    height: 60px;
+    color: gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img {
+    visibility: hidden;
+}
+
+header:hover img {
+    visibility: visible;
+    transition: 0.6s;
+    transform: translateX(16vw);
+}
+
+header h1 {
+    font-size: 25px;
+    font-weight: 200;
+    user-select: none;
+}
+
+header button {
+    padding: 9px 25px;
+    font-size: 16px;
+    background-color: gray;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+header button:hover {
+    color: yellow;
+    -color: black;
+}
+
+.cards {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    padding: 10px;
+    margin: 20px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 25px gray;
+    transition: 0.1s ease-out;
+}
+
+.card:hover {
+    background-color: black;
+    color: yellow;
+    transform: scale(1.1);
+}
+
+.card .profile-image img {
+    border-radius: 50%;
+}
+
+.card .card-content {
+    text-align: center;
+}
+
+.card .card-content h3 {
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.card .card-content h2 {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.load {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wave {
+    width: 5px;
+    height: 100px;
+    background: linear-gradient(45deg, yellow, red);
+    margin: 10px;
+    animation: wave 1s linear infinite;
+    border-radius: 20px;
+}
+
+.wave:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.wave:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.wave:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.wave:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.wave:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.wave:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+.wave:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+.wave:nth-child(9) {
+    animation-delay: 0.8s;
+}
+
+.wave:nth-child(10) {
+    animation-delay: 0.9s;
+}
+
+@keyframes wave {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
